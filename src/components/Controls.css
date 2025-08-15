@@ -1,0 +1,18 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  background: #ff0;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.controls button:hover {
+  background: #ffa500;
+}

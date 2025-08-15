@@ -1,0 +1,169 @@
+.slot-machine {
+  max-width: 500px;      /* increase width */
+  width: 90%;    
+ /* responsive */
+  margin: auto;
+  padding: 30px;         /* more padding */
+  background: rgba(255, 255, 255, 0.1);  /* slightly transparent */
+  border-radius: 20px;   /* rounded edges */
+  box-shadow: 0 0 30px #c21010ff, 0 0 60px #ff0026ff; /* neon glow */
+  backdrop-filter: blur(10px); /* glass effect */
+  border: 2px solid #ffeb3b;
+  margin-top:70px;
+}
+
+.reels {
+  display: flex;
+  justify-content: center;
+  gap: 15px;     /* space between reels */
+  margin: 25px 0;
+}
+
+.reel {
+  width: 100px;     /* larger reels */
+  height: 100px;
+  font-size: 3rem;  /* larger symbols */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(94, 91, 91, 0.11);
+  border-radius: 15px;
+  box-shadow: 0 0 15px #fff, 0 0 30px #ff9800;
+}
+.info {
+  display: flex;
+  justify-content: space-between; /* spaces items evenly */
+  width: 100%; /* or set max-width if needed */
+  max-width: 500px; /* optional, aligns with your slot machine box */
+  margin: 0 auto 20px auto; /* center and add spacing below */
+  font-size: 1.2rem; /* slightly bigger text */
+  font-weight: bold;
+  color: #fff;
+}
+.info span {
+  padding: 0 10px; /* adds horizontal spacing between items */
+}
+/* Controls container: space between buttons */
+.bet-controls {
+  display: flex;
+  align-items: center;
+  gap: 15; /* space between buttons */
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.bet-controls button {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #FFD700; /* yellow */
+  color: #000; /* black text */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.bet-controls button:hover {
+  transform: scale(1.1);
+  background: #FFC107; /* darker yellow on hover */
+}
+
+.bet-controls span {
+  font-size: 1.2rem;
+  color: #FFD700;
+  font-weight: bold;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+  html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background container */
+.app-background {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, rgba(255, 0, 0, 0.6) 0%, rgba(90, 0, 0, 0.9) 100%);
+  animation: glowPulse 4s ease-in-out infinite alternate;
+}
+
+/* Glow pulse animation */
+@keyframes glowPulse {
+  0% {
+    background: radial-gradient(circle at center, rgba(255, 0, 0, 0.8) 0%, rgba(50, 0, 0, 1) 100%);
+  }
+  100% {
+    background: radial-gradient(circle at center, rgba(255, 80, 80, 0.9) 0%, rgba(90, 0, 0, 1) 100%);
+  }
+}
+
+/* Slot machine box */
+.slot-container {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+}
+
+
+.reel {
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(94, 91, 91, 0.11);
+  border-radius: 15px;
+  box-shadow: 
+    0 0 10px #ff0000,       /* inner red glow */
+    0 0 20px #ff4d4d,       /* middle red glow */
+    0 0 40px #ff0000;       /* outer red glow */
+  animation: reelGlow 2s infinite alternate;
+}
+
+/* Optional pulsating glow animation */
+@keyframes reelGlow {
+  0% {
+    box-shadow: 
+      0 0 5px #ff0000,
+      0 0 15px #ff4d4d,
+      0 0 25px #ff0000;
+  }
+  50% {
+    box-shadow: 
+      0 0 15px #ff0000,
+      0 0 30px #ff6666,
+      0 0 50px #ff0000;
+  }
+  100% {
+    box-shadow: 
+      0 0 10px #ff0000,
+      0 0 20px #ff4d4d,
+      0 0 40px #ff0000;
+  }
+}
