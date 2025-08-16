@@ -110,6 +110,7 @@ function SlotMachine() {
             symbols={symbols}
             spinning={spinning}
             isWinning={winningReels.includes(idx)}
+            finalIndex={reels[idx]}
           />
         ))}
       </div>
