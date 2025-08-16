@@ -230,4 +230,53 @@
     font-size: 0.8rem;
   }
 }
+.slot-machine {
+  width: 600px;       /* bigger than before */
+  max-width: 90%;     /* keeps it responsive on smaller screens */
+  padding: 50px;      /* increase padding for more space inside */
+  margin: auto;       /* center it horizontally */
+  background: rgba(255, 255, 255, 0.1);  /* optional: semi-transparent */
+  border-radius: 20px; /* rounded corners */
+  box-shadow: 0 0 30px rgba(0,0,0,0.5); /* nicer shadow */
+  text-align: center;
+}
+.slot-machine {
+  width: 600px;
+  max-width: 90%;
+  padding: 50px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  text-align: center;
+
+  /* Move container slightly up */
+  position: relative;
+  top: -30px; /* negative value moves it up */
+}
+
+
+.reel {
+  width: 100px;
+  height: 100px; /* show only one symbol */
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 0 10px;
+  background: rgba(0,0,0,0.1);
+}
+
+.reel-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.reel-symbol {
+  height: 100px; /* same as container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
 
