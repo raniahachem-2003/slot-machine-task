@@ -1,22 +1,7 @@
-/*import React from "react";
-import "./Reel.css";
-
-export default function Reel({ symbol,symbols, spinning, isWinning }) {
-  return (
-    
-     
-<div className={`reel ${isWinning ? "win" : ""}`}>
-      <div className="symbol" >{symbols[symbol]}</div>
-    </div>
-  );
-
-}
-
-*/
 import React, { useEffect, useState, useRef } from "react";
 import "./Reel.css";
 
-export default function Reel({ symbols, spinning, finalIndex }) {
+export default function Reel({ symbol, symbols, spinning, isWinning, finalIndex }) {
   const [currentSymbols, setCurrentSymbols] = useState([symbols[0]]);
   const [position, setPosition] = useState(0);
   const symbolHeight = 100; // match CSS
@@ -72,7 +57,7 @@ export default function Reel({ symbols, spinning, finalIndex }) {
   }, [spinning, finalIndex, symbols]);
 
   return (
-    <div className="reel">
+    <div className={`reel ${isWinning ? "win" : ""}`}>
       <div
         className="reel-items"
         style={{ transform: `translateY(-${position}px)` }}
