@@ -13,9 +13,8 @@ h1, h2, h3 {
   color: #fff;
 }
 
-/* =======================
-   Full-page Video Background
-======================= */
+/*Full-page Video Background*/
+
 .app-background {
   position: relative;
   width: 100%;
@@ -38,9 +37,9 @@ h1, h2, h3 {
   filter: brightness(0.6) contrast(1.2);
 }
 
-/* =======================
-   Slot Machine Container
-======================= */
+ 
+/*Slot Machine Container*/
+ 
 .slot-container {
   position: relative;
   z-index: 1; /* above video */
@@ -55,9 +54,8 @@ h1, h2, h3 {
   align-items: center;
 }
 
-/* =======================
-   Neon Title
-======================= */
+/* Neon Title*/
+
 .title {
   font-family: 'Orbitron', sans-serif;
   font-size: 4rem;
@@ -86,9 +84,8 @@ h1, h2, h3 {
   }
 }
 
-/* =======================
-   Buttons
-======================= */
+/*Buttons*/
+
 button {
   background: linear-gradient(45deg, #ffeb3b, #ff9800);
   border: none;
@@ -106,9 +103,8 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* =======================
-   Slot Reels
-======================= */
+/*Slot Reels*/
+
 .reel {
   background: #fff;
   border-radius: 12px;
@@ -116,9 +112,8 @@ button:hover {
   box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
 }
 
-/* =======================
-   Center Content
-======================= */
+/* Center Content*/
+
 .content-overlay {
   display: flex;
   flex-direction: column;
